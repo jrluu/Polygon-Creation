@@ -48,7 +48,6 @@ int main(int argc, char *argv[])
 	cin >> yWindowSize;
 
 	PixelBuffer = new float[xWindowSize * yWindowSize * 3];
-//	clearBuffer();
 
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_SINGLE);
@@ -57,7 +56,6 @@ int main(int argc, char *argv[])
 
 	//create and set main window title
 	int MainWindow = glutCreateWindow("Hello Graphics!!");
-//	glClearColor(1.0, 1.0, 1.0, 1.0); //set the buffer of OpenGL to white
 
 	char* tmp = new char[100];
 	cout << "Enter file to load : ";
@@ -65,7 +63,6 @@ int main(int argc, char *argv[])
 	readFile(tmp);
 	
 	userInterfaceMenu();	
-//	combinePolygons();
 
 	delete tmp; // may have a delete function
 
